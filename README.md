@@ -12,6 +12,8 @@ These projects have been prepared for the Baykar Tech frontend technical job int
 
 ## Interface Design Task
 
+**LIVE DEMO: https://baykar-frontend-fiyv2q8js-arda-keyisoglus-projects.vercel.app/**
+
 For this part of the project, your task is to code the responsive interface design provided in the Figma file. You can choose to implement it using either Tailwind CSS or Bootstrap. I chose Bootstrap for this task.
 
 I took each photo separately, which took a considerable amount of time. Although it was time-consuming, I wanted to demonstrate my ability to work meticulously, piece by piece. Alternatively, I could have taken larger photos and continued, but I preferred to work with smaller pieces to showcase my attention to detail.
@@ -36,7 +38,9 @@ Regarding CSS, I decided to use a mix of custom CSS and Bootstrap to demonstrate
 
 ## Quiz App
 
-  In this project, the primary focus was on developing a JavaScript application, specifically a Quiz App. While I used Bootstrap for the previous task to demonstrate my skills, I decided to utilize Tailwind CSS for the Quiz App to showcase my proficiency with it. Additionally, I ensured that the design is responsive across different screen sizes.
+**LIVE DEMO: https://baykar-quizapp-3zt00vw45-arda-keyisoglus-projects.vercel.app/**
+
+In this project, the primary focus was on developing a JavaScript application, specifically a Quiz App. While I used Bootstrap for the previous task to demonstrate my skills, I decided to utilize Tailwind CSS for the Quiz App to showcase my proficiency with it. Additionally, I ensured that the design is responsive across different screen sizes.
 
 As an additional feature, I created a general fetching folder. With this setup, you can perform GET, POST, PUT, and DELETE requests with just a string, and a single Axios function handles the fetching. Although this functionality wasn't required for this project, I wanted to demonstrate my ability to optimize and streamline code.
 
