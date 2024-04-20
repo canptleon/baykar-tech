@@ -114,12 +114,12 @@ function GameArea(props: Props) {
       <h3 className="xsfull:leading-[1.2] xsfull:gap-[12px] min-w-full mb-[30px] p-[10px] rounded-[10px] justify-self-center rounded-2xl [box-shadow:0.3rem_0.3rem_0.6rem_#c8d0e7,_-0.2rem_-0.2rem_0.5rem_white] flex items-center"><span className="text-mainColor font-bold mr-[5px] text-nowrap">Soru {questionIndex}:</span> {filteredQuestions[0]?.title}</h3>
       <div className="flex flex-col min-w-full">
         {shuffledParts.map((part, index) => (
-          <button key={index}  className="cursor-auto text-left flex items-center gap-[12px] mb-[20px]">
-            <span onClick={() => handleSelectAnswer(String.fromCharCode(65 + index))} className="cursor-pointer hover:[box-shadow:inset_0.2rem_0.2rem_0.5rem_#c8d0e7,_inset_-0.2rem_-0.2rem_0.5rem_white] hover:text-[#6d5dfc] text-mainColor font-bold mr-[5px] w-8 h-8 rounded-[50%] [box-shadow:0.3rem_0.3rem_0.6rem_#c8d0e7,_-0.2rem_-0.2rem_0.5rem_white] flex justify-center items-center text-[1rem] cursor-pointer text-secondColor [transition:all_0.5s_ease] hover:[transition:all_0.5s_ease]">{String.fromCharCode(65 + index)}</span> {part}
+          <button key={index} className="cursor-auto text-left flex items-center gap-[12px] mb-[20px]">
+            <span onClick={() => handleSelectAnswer(String.fromCharCode(65 + index))} className={`${canSelectAnswer && "cursor-pointer hover:[box-shadow:inset_0.2rem_0.2rem_0.5rem_#c8d0e7,_inset_-0.2rem_-0.2rem_0.5rem_white] hover:text-[#6d5dfc]"} text-mainColor font-bold mr-[5px] w-8 h-8 rounded-[50%] [box-shadow:0.3rem_0.3rem_0.6rem_#c8d0e7,_-0.2rem_-0.2rem_0.5rem_white] flex justify-center items-center text-[1rem] text-secondColor [transition:all_0.5s_ease] hover:[transition:all_0.5s_ease]`}>{String.fromCharCode(65 + index)}</span> {part}
           </button>
         ))}
       </div>
-      <div className="xsfull:left-[0] xsfull:right-[0] xsfull:top-[25px] flex flex-col text-center justify-center absolute top-[15px] right-[15px] justify-center items-center gap-[9px] font-bold"><img className="w-[50px]" src="/images/clock.png" /> <span>{timer}</span></div>
+      <div className="xsfull:left-[0] xsfull:right-[0] xsfull:top-[25px] flex flex-col text-center justify-center absolute top-[15px] right-[15px] justify-center items-center gap-[9px] font-bold"><img className="w-[50px]" src="/images/clock.png" /> <span className={`${timer <= 20 ? "text-green-600" : "text-red-500"}`}>{timer}</span></div>
     </div>
   )
 }
